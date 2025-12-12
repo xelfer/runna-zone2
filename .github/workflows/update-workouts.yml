@@ -1,5 +1,6 @@
 name: Update Garmin Workouts
 
+
 on:
   schedule:
     # Run daily at 6am UTC (adjust to your timezone)
