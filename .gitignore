@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+
+# Logs
+*.log
+garmin.log
+
+# Credentials (never commit these)
+.env
+*.json
+!package.json
+
+# IDE
+.idea/
+.vscode/
+*.swp

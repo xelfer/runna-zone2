@@ -1,0 +1,29 @@
+name: Update Garmin Workouts
+
+on:
+  schedule:
+    # Run daily at 6am UTC (adjust to your timezone)
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install garminconnect
+
+      - name: Update Runna workouts with HR zones
+        run: python garmin.py --filter Runna --verbose
+        env:
+          GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
+          GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
