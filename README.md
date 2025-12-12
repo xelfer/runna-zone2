@@ -1,6 +1,6 @@
 # Runna Zone2
 
-Automatically add HR Zone 2 targets to your Runna workouts in Garmin Connect.
+Automatically add HR Zone 2 targets to your Runna workouts synced to Garmin watches.
 
 ## The Problem
 
@@ -40,10 +40,12 @@ Run this automatically once per day without any local setup:
 4. **Done!** The workflow runs daily at 6am UTC.
 
 5. **To run manually:**
-   - Go to the Actions tab
+   - Go to your fork's Actions tab (https://github.com/YOUR_USERNAME/runna-zone2/actions)
    - Click "Update Garmin Workouts" in the left sidebar
-   - Click "Run workflow" button on the right
-   - Click the green "Run workflow" button
+   - You'll see a banner saying "This workflow has a workflow_dispatch event trigger"
+   - Click the "Run workflow" dropdown button on the right
+   - Click the green "Run workflow" button to start it
+   - Refresh the page to see the run progress and logs
 
 > **Note:** The first time the action runs, you'll receive an email from Garmin about a login from a new location (GitHub's servers). This is normal and expected.
 
