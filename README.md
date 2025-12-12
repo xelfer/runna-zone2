@@ -129,6 +129,8 @@ The script detects easy vs hard intervals by looking for keywords in Runna's ste
 
 **Help wanted:** This has only been tested with the "Returning to Running" plan. If you're on a different Runna plan (5K, 10K, marathon, etc.) and notice workouts that aren't being handled correctly, please open an issue with the workout description so I can add the missing keywords.
 
+Feel free to request other features too - I'll add what I can!
+
 ## License
 
 MIT
