@@ -37,7 +37,15 @@ Run this automatically once per day without any local setup:
    - Go to the Actions tab in your fork
    - Click "I understand my workflows, go ahead and enable them"
 
-4. **Done!** The workflow runs daily at 6am UTC. You can also trigger it manually from the Actions tab.
+4. **Done!** The workflow runs daily at 6am UTC.
+
+5. **To run manually:**
+   - Go to the Actions tab
+   - Click "Update Garmin Workouts" in the left sidebar
+   - Click "Run workflow" button on the right
+   - Click the green "Run workflow" button
+
+> **Note:** The first time the action runs, you'll receive an email from Garmin about a login from a new location (GitHub's servers). This is normal and expected.
 
 ### Security
 
