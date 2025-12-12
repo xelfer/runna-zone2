@@ -4,7 +4,7 @@ Automatically add HR Zone 2 targets to your Runna workouts synced to Garmin watc
 
 ## The Problem
 
-Runna syncs great structured workouts to Garmin, but warmups, cooldowns, and easy intervals don't have HR zone targets. This means your Garmin watch won't alert you if you're going too hard during recovery portions.
+Runna syncs great structured workouts to Garmin, but warmups, cooldowns, and easy intervals don't have HR zone targets. During structured workouts, [Garmin watches ignore your custom HR alerts](https://support.garmin.com/en-US/?faq=RsB4M7L3Nu8VVePzEuICG9) - only targets set within the workout itself will trigger alerts. This means your watch won't alert you if you're going too hard during recovery portions.
 
 ## The Solution
 
