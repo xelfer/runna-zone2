@@ -44,6 +44,7 @@ Run this automatically once per day without any local setup:
    - Click "Update Garmin Workouts" in the left sidebar
    - You'll see a banner saying "This workflow has a workflow_dispatch event trigger"
    - Click the "Run workflow" dropdown button on the right
+   - Check "Dry run" to preview changes without modifying workouts (recommended for first run)
    - Click the green "Run workflow" button to start it
    - Refresh the page to see the run progress and logs
 
@@ -116,6 +117,17 @@ Add:
 5. Pushes the updated workout back to Garmin
 
 The script is idempotent - running it multiple times won't duplicate changes.
+
+## Supported Workouts
+
+The script detects easy vs hard intervals by looking for keywords in Runna's step descriptions:
+
+| Type | Keywords | Action |
+|------|----------|--------|
+| Easy | "conversational", "easy", "slow" | Adds Zone 2 HR target |
+| Hard | "pushing", "fast", "hard", "tempo", "threshold", "race", "sprint" | Skipped |
+
+**Help wanted:** This has only been tested with the "Returning to Running" plan. If you're on a different Runna plan (5K, 10K, marathon, etc.) and notice workouts that aren't being handled correctly, please open an issue with the workout description so I can add the missing keywords.
 
 ## License
 
