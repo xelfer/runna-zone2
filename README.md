@@ -30,7 +30,7 @@ Run this automatically once per day without any local setup:
 2. **Add your Garmin credentials as secrets**
    - Go to your fork's Settings > Secrets and variables > Actions
    - Click "New repository secret"
-   - Add `GARMIN_EMAIL` with your Garmin Connect email
+   - Add `GARMIN_EMAIL` with your Garmin Connect login (email address or username, depending on your account)
    - Add `GARMIN_PASSWORD` with your Garmin Connect password
 
 3. **Enable GitHub Actions**
