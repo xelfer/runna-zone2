@@ -90,7 +90,7 @@ class GarminHRZoneInjector:
         step_type = step.get("stepType", {})
         step_key = step_type.get("stepTypeKey", "").lower()
         step_id = step_type.get("stepTypeId")
-        description = step.get("description", "").lower()
+        description = (step.get("description") or "").lower()
 
         # Check description for hard effort indicators - never add HR zone to these
         for pattern in HARD_DESCRIPTION_PATTERNS:
